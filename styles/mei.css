@@ -5,28 +5,31 @@ body{
     width: 600px;
     margin: 50px auto;
     background-color: #BBDEFB;
-    padding: 50px 20px 20px 20px;
+    padding: 30px 20px 20px 20px;
     border: 10px solid #E3F2FD;
     border-radius: 25px;
 }
 #heading{
-    margin: 0 auto;
-    padding: 20px 0;
+    margin: auto;
+    padding: 20px;
     text-align: center;
     color:#0D47A1 ;
     font-family: "Lucida Console", "Courier New", monospace;
 }
 img.mei1{
     display: block;
-    margin: 5px auto;
+    margin:  auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width:35%;
     height:40%;
 }
 img.mei2{
     display: block;
-    margin: 5px auto;
+    margin: auto;
     width:35%;
     height:50%;
+    margin-bottom: 5px;
 }
 div.caption{
     text-align: center;
