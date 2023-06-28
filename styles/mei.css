@@ -1,7 +1,6 @@
 html{
     background-color: #82B1FF;
 }
-
 body{
     width: 600px;
     margin: 50px auto;
@@ -28,7 +27,6 @@ img.mei2{
     margin: 5px auto;
     width:35%;
     height:50%;
-   
 }
 div.caption{
     text-align: center;
@@ -44,7 +42,6 @@ ul{
     display: inline-block;
     text-align: left;
     font-family: "Lucida Console", "Courier New", monospace;
-
 }
 li{
     margin: 5px auto;
