@@ -10,19 +10,29 @@ body{
     border: 10px solid #E3F2FD;
     border-radius: 25px;
 }
-h1{
-
+#heading{
     margin: 0 auto;
     padding: 20px 0;
     text-align: center;
     color:#0D47A1 ;
     font-family: "Lucida Console", "Courier New", monospace;
 }
-img{
+img.mei1{
     display: block;
-    margin: 0 auto;
+    margin: 5px auto;
     width:35%;
     height:40%;
+   
+}
+img.mei2{
+    display: block;
+    margin: 5px auto;
+    width:35%;
+    height:50%;
+   
+}
+div.caption{
+    text-align: center;
 }
 p{
     text-align: center;
@@ -35,4 +45,15 @@ ul{
     display: inline-block;
     text-align: left;
     font-family: "Lucida Console", "Courier New", monospace;
+
+}
+li{
+    margin: 5px auto;
+    padding: 5px 5px 5px 5px;
+}   
+li.popular{
+    border: 4px dashed #5391f5;
+    border-radius: 5px;
+    margin: 5px auto;
+    padding: 5px 5px 5px 5px;
 }
