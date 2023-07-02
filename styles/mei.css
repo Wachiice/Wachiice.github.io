@@ -1,6 +1,7 @@
 html{
     background-color: #82B1FF;
 }
+
 body{
     width: 600px;
     margin: 50px auto;
@@ -51,7 +52,7 @@ li{
     padding: 5px 5px 5px 5px;
 }   
 li.popular{
-    border: 3px dashed #5391f5;
+    border: 4px dotted red;
     border-radius: 5px;
     margin: 5px auto;
     padding: 5px 5px 5px 5px;
