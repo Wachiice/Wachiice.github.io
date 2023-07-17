@@ -1,21 +1,47 @@
 <html>
     <head>
-        <title>wachiray-example</title>
-        <link rel="stylesheet" href="styles/mei.css" type="text/css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script>
+        while(true){
+          var userInput = prompt("Enter a positive integer:");
+          var number = userInput;
+          if (number> 0 && number % 1 == 0){
+            showPrimes(number);
+            break;
+          }
+        }
+        function isPrime(number) {
+            for (let i=2; i<number; i++){
+                if (number % i == 0) return false;
+        }
+        return true;
+        }
+        function showPrimes(number){
+          let prime =[];
+            for (let i=2; i<number; i++){
+                if(!isPrime(i)) continue;
+                  prime.push(i);
+            }
+            alert("for n = "+number+" prime numbers are " +prime);
+        }
+      </script>
+      <style>
+        h2{
+          text-align: center;
+        }
+      </style>
     </head>
     <body>
-       <h1 id="heading">Mei Kusakabe</h1>
-       <img class="mei1" src="images/Mei_Kusakabe.webp"  alt="My test image">
-       <img class="mei2" src="images/Mei.jpg"  alt="My test image"> 
-       <div class="caption"><caption>Mei Kusakabe</caption></div>
-       <p>Japanese name : 草壁 メイ (Mei Kusakabe)</p>
-       <div class="list">
-        <ul>
-            <li class="popular">Age : 4 year</li>
-            <li>Gender : Female </li>
-            <li class="popular">Species : Human </li>
-           </ul>
-       </div>
-       <p>Click >> <a target="=_blank" href="https://ghibli.fandom.com/wiki/Mei_Kusakabe">Mei Kusakabe</a></p>
+      <h2>Prime Numbers Finder!</h2>
+      <h1>Write the web app to prompt accepting for a positive integer number</h1>
+      <ul>
+        <li>If the entered text is not a positive integer number, then the web app will keep asking for a number until the valid positive integer is entered</li>
+        <li>If the entered text is a positive integer, then the app will print prime numbers that are not greater than that given positive integer</li>
+      </ul>
+      <h1>Hint:</h1>
+      <ol type="1">
+        <li>you may want to use loop with label</li>
+        <li>you may want to use array with push function</li>
+      </ol> 
     </body>
 </html>
