@@ -1,0 +1,76 @@
+html{
+    background-color: #82B1FF;
+}
+
+body{
+    width: 600px;
+    height: 900px;
+    margin: 50px auto;
+    background-color: #BBDEFB;
+    padding: 30px 20px 20px 20px;
+    border: 10px solid #E3F2FD;
+    border-radius: 25px;
+}
+#heading{
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    color:#0D47A1 ;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+img.mei1{
+    display: block;
+    margin:  auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width:35%;
+    height:auto;
+    max-width: 100%;
+}
+img.mei2{
+    display: block;
+    margin: auto;
+    width:35%;
+    height:auto;
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+div.caption{
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+div.list{
+    text-align: center;
+}
+ul{
+    display: inline-block;
+    text-align: left;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+li{
+    margin: 5px auto;
+    padding: 5px 5px 5px 5px;
+}   
+li.popular{
+    border: 4px dotted red;
+    border-radius: 5px;
+    margin: 5px auto;
+    padding: 5px 5px 5px 5px;
+}
+/* iPhone SE in portrait */
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+   
+}
+/* iPhone SE in landscape */
+@media only screen and (max-width: 667px) and (orientation: landscape) {
+    
+}
+/* iPad Air in portrait */
+@media only screen and (min-width: 820px) and (max-width: 1180px) and (orientation: portrait) {
+}
+/* iPad Air in landscape */
+@media only screen and (min-width: 820px) and (max-width: 1180px) and (orientation: landscape) {
+}
