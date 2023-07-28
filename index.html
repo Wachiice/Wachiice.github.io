@@ -1,22 +1,48 @@
-<head>
-    <title>wachiray-example</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/mei.css" type="text/css">
-    
-</head>
+<html>
+    <head>
+        <style>
+            div{
+                background-color: blue;
+                height: 100px;
+                width: 25%;
+                float:left;
+                margin-top: 5px;
+            }
+        </style>
+    </head>
     <body>
-       <h1 id="heading">Mei Kusakabe</h1>
-       <img class="mei1" src="images/Mei_Kusakabe.webp"  alt="My test image">
-       <img class="mei2" src="images/Mei.jpg"  alt="My test image"> 
-       <div class="caption"><caption>Mei Kusakabe</caption></div>
-       <p>Japanese name : 草壁 メイ (Mei Kusakabe)</p>
-       <div class="list">
-        <ul>
-            <li class="popular">Age : 4 year</li>
-            <li>Gender : Female </li>
-            <li class="popular">Species : Human </li>
-           </ul>
-       </div>
-       <p>Click >> <a target="=_blank" href="https://ghibli.fandom.com/wiki/Mei_Kusakabe">Mei Kusakabe</a></p>
+        <script>
+            for(let i=1; i<=16 ;i++){
+                let myDiv= document.createElement("div");
+                document.body.appendChild(myDiv);
+            }
+            let firstOutputColor;
+            function random(number){
+                return Math.floor(Math.random()*number);
+            }
+            function bgChange(){
+                let rndColors = "rgb("+ random(255)+","+ random(255)+","+ random(255)+")";
+                return rndColors;
+            }
+            
+            var divs = document.querySelectorAll("div");
+            for (let i = 0; i < divs.length; i++) {
+            divs[i].onclick = function (e) {
+                // If firstOutputColor is undefined, generate the first output color
+                if (!firstOutputColor) {
+                    firstOutputColor = bgChange();
+                }
+                // Get the index of the clicked div
+                let index = Array.from(divs).indexOf(e.target);
+
+                // Check if the index is in column 2 or 4 (indexes 1 and 3, since it's zero-based)
+                if (index % 4 === 1 || index % 4 === 3) {
+                    e.target.style.backgroundColor = firstOutputColor;
+                } else {
+                    e.target.style.backgroundColor = bgChange();
+                }
+            };
+        }
+        </script>
     </body>
 </html>
